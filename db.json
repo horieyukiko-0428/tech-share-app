@@ -1,0 +1,19 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "React Hooksの完全理解",
+      "content": "## React Hooksについて\n\nReact Hooksを使うと状態管理ができます。\n\n- useState\n- useEffect\n- useContext\n\nreactではコンポーネント単位で管理します。\n\nuseEffectを利用するとAPI通信を実装できます。",
+      "author": "Tech Taro",
+      "createdAt": "2026-05-14"
+    },
+    {
+      "id": "2",
+      "title": "Tailwind CSSで爆速コーディング",
+      "content": "## Tailwind CSS\n\nCSSを直接書かずにclassNameでスタイルを適用できます。\n\n- text-red-500\n- text-4xl\n- bg-blue-500\n\nReactとの相性も良く、開発が高速になります。",
+      "author": "Front Engineer",
+      "createdAt": "2026-05-15"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
