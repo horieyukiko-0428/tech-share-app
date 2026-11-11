@@ -7,7 +7,7 @@ export default function Home() {
   const {searchQuery, setSearchQuery, filteredArticles } = useSearch(articles);
 
   useEffect(() => {
-    fetch('http://localhost:3000/articles')
+    fetch(`${import.meta.env.VITE_API_URL}/articles`)
       .then((res) => res.json())
       .then((data) => setArticles(data));
   }, []);

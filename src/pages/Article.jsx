@@ -10,7 +10,7 @@ export default function Article() {
   const [article, setArticle] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/articles/${id}`)
+    fetch(`${import.meta.env.VITE_API_URL}/articles/${id}`)
       .then((res) => res.json())
       .then((data) => setArticle(data));
   }, [id]);
@@ -18,7 +18,7 @@ export default function Article() {
   const handleDelete = async () => {
     if (!window.confirm('この記事を削除しますか？')) return;
 
-    await fetch(`http://localhost:3000/articles/${id}`, {
+    await fetch(`${import.meta.env.VITE_API_URL}/articles/${id}`, {
       method: 'DELETE',
     });
 
